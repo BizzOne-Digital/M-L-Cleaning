@@ -2,14 +2,14 @@
 import { useEffect, useRef, useState } from "react";
 
 const galleryItems = [
-  { src: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80", label: "Kitchen Deep Clean", cat: "Kitchen" },
-  { src: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80", label: "Living Room Refresh", cat: "Living Room" },
-  { src: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&q=80", label: "Apartment Clean", cat: "Apartment" },
-  { src: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80", label: "Office Cleaning", cat: "Commercial" },
-  { src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80", label: "Move-Out Ready", cat: "Move-Out" },
-  { src: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&q=80", label: "Bedroom Detail", cat: "Bedroom" },
-  { src: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80", label: "Spotless Bathroom", cat: "Bathroom" },
-  { src: "https://images.unsplash.com/photo-1565183997392-2f6f122e5912?w=600&q=80", label: "Commercial Space", cat: "Commercial" },
+  { src: "https://images.unsplash.com/photo-1647381518264-97ff1835026f?w=600&q=80", label: "Kitchen Deep Clean", cat: "Kitchen" },
+  { src: "https://images.unsplash.com/photo-1758272421516-9593de0fb5bf?w=600&q=80", label: "Living Room Refresh", cat: "Living Room" },
+  { src: "https://images.unsplash.com/photo-1758273705627-937374bfa978?w=600&q=80", label: "Apartment Clean", cat: "Apartment" },
+  { src: "https://images.unsplash.com/photo-1437326300822-01d8f13c024f?w=600&q=80", label: "Office Cleaning", cat: "Commercial" },
+  { src: "https://images.unsplash.com/photo-1589803010842-41cdf85bf0f9?w=600&q=80", label: "Move-Out Ready", cat: "Move-Out" },
+  { src: "https://plus.unsplash.com/premium_photo-1679775635916-ef9f76e390dd?w=600&q=80", label: "Bedroom Detail", cat: "Bedroom" },
+  { src: "https://images.unsplash.com/photo-1737372805905-be0b91ec86fb?w=600&q=80", label: "Spotless Bathroom", cat: "Bathroom" },
+  { src: "https://plus.unsplash.com/premium_photo-1663011218145-c1d0c3ba3542?w=600&q=80", label: "Commercial Space", cat: "Commercial" },
 ];
 
 const categories = ["All", "Kitchen", "Bathroom", "Living Room", "Apartment", "Bedroom", "Commercial", "Airbnb", "Full Home", "Move-Out"];

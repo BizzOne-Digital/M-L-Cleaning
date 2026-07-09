@@ -43,7 +43,7 @@ export default function Hero() {
         />
         <div style={{
           position: "absolute", inset: 0,
-          background: "linear-gradient(135deg, rgba(45,0,80,0.92) 0%, rgba(75,0,130,0.85) 50%, rgba(45,0,80,0.90) 100%)",
+          background: "linear-gradient(135deg, rgba(45,0,80,0.65) 0%, rgba(75,0,130,0.55) 50%, rgba(45,0,80,0.65) 100%)",
         }} />
         {/* Animated gradient orbs */}
         <div style={{
