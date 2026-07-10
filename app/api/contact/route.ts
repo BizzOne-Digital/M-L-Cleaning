@@ -41,7 +41,20 @@ Submitted via mlcleaninghs.com contact form
     });
 
     // If credentials are configured, send the email
-    if (process.env.GMAIL_PASS) {
+    const hasRealCredentials =
+      !!process.env.GMAIL_PASS && process.env.GMAIL_PASS !== "your_gmail_app_password_here";
+
+    if (hasRealCredentials) {
+      try {
+        await transporter.verify();
+      } catch (verifyError) {
+        console.error("EMAIL NOTIFICATION ERROR — SMTP login/connection failed:", verifyError);
+        return NextResponse.json(
+          { error: "Email service is misconfigured. Check GMAIL_USER/GMAIL_PASS." },
+          { status: 500 }
+        );
+      }
+
       await transporter.sendMail({
         from: `"M&L Cleaning Website" <${process.env.GMAIL_USER}>`,
         to: "mlcleaninghomeservicesllc@gmail.com",
@@ -74,17 +87,21 @@ Submitted via mlcleaninghs.com contact form
 </div>
         `,
       });
+      console.log(`Email notification sent successfully for booking request from ${name}.`);
     } else {
-      // Log to console if no email credentials (development mode)
-      console.log("=== CONTACT FORM SUBMISSION ===");
+      // Log to console if no real email credentials configured
+      console.warn(
+        "EMAIL NOTIFICATION SKIPPED — GMAIL_PASS is missing or still set to the placeholder value. " +
+        "Set a real Gmail App Password in .env.local to enable email sending."
+      );
+      console.log("=== CONTACT FORM SUBMISSION (not emailed) ===");
       console.log(emailContent);
       console.log("================================");
-      console.log("NOTE: Set GMAIL_USER and GMAIL_PASS env vars to enable email sending.");
     }
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("Contact form error:", error);
+    console.error("EMAIL NOTIFICATION ERROR — failed to send booking request email:", error);
     return NextResponse.json({ error: "Failed to send message" }, { status: 500 });
   }
 }
