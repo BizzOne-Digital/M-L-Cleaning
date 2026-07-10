@@ -3,46 +3,46 @@ import { useEffect, useRef } from "react";
 
 const reviews = [
   {
-    name: "Maria Gonzalez",
+    name: "Daritza Rojas",
     location: "Lake Wales, FL",
     rating: 5,
-    text: "M&L Cleaning is absolutely amazing! My house has never looked this clean. They were on time, professional, and paid attention to every detail. I booked them for monthly cleaning and couldn't be happier!",
-    initials: "MG",
+    text: "M&L Cleaning Home Services LLC did an amazing job on my move-out cleaning in Lake Wales. The house looked spotless from top to bottom, and I was honestly impressed by the attention to detail. They were on time, professional, and made the whole process stress-free.",
+    initials: "DR",
   },
   {
-    name: "James Thompson",
-    location: "Winter Haven, FL",
+    name: "Idalia Gonzalez",
+    location: "Polk County, FL",
     rating: 5,
-    text: "Hired them for a move-out clean and they did a phenomenal job. The landlord was impressed and I got my full deposit back. Highly recommend M&L to anyone in the area!",
-    initials: "JT",
+    text: "Excellent service. I'm so grateful for the care and detail she puts into her work. Mara is punctual, thorough, and extremely detail-oriented. She's consistent, trustworthy, and truly takes pride in making a home feel peaceful and clean.",
+    initials: "IG",
   },
   {
-    name: "Priya Sharma",
-    location: "Haines City, FL",
+    name: "Gaby & Rosa",
+    location: "Polk County, FL",
     rating: 5,
-    text: "I use them for my Airbnb and the turnaround is always fast and the quality is hotel-level. My guests consistently mention how clean the space is. 5 stars every time!",
-    initials: "PS",
+    text: "We had M&L Cleaning Home Services LLC do a deep clean before family came to visit, and they made the house look incredible. It felt like walking into a completely different home. The team was easy to work with and answered all of my questions.",
+    initials: "GR",
   },
   {
-    name: "Robert Davis",
-    location: "Davenport, FL",
+    name: "Hector Oquendo",
+    location: "Polk County, FL",
     rating: 5,
-    text: "Best cleaning company in Polk County, hands down. They are thorough, reliable, and use great products. My office has never been cleaner. Will not use anyone else.",
-    initials: "RD",
+    text: "I couldn't be happier with the move-in/move-out cleaning from M&L Cleaning Home Services LLC. They did an amazing job and made the whole house look and feel fresh again. Every room was spotless, and you could tell they really care about the work.",
+    initials: "HO",
   },
   {
-    name: "Linda Morales",
-    location: "Bartow, FL",
+    name: "David Romero",
+    location: "Polk County, FL",
     rating: 5,
-    text: "Called them for a deep clean before a family gathering. They arrived on time, worked hard, and left the house spotless. Very fair pricing too. Definitely booking again!",
-    initials: "LM",
+    text: "I recently hired M&L Cleaning Home Services LLC for a deep cleaning service, and the results exceeded my expectations. Their team was professional, punctual, and incredibly detail-oriented from start to finish.",
+    initials: "DR",
   },
   {
-    name: "Carlos Rivera",
-    location: "Lake Wales, FL",
+    name: "Xavier Pizarro",
+    location: "Polk County, FL",
     rating: 5,
-    text: "Trusted, reliable, and always deliver. I've had many cleaning companies before but M&L is on another level. They truly care about the quality of their work.",
-    initials: "CR",
+    text: "Excellent service! My house was spotless and exceeded my expectations. They were punctual, professional, and very detail-oriented. I recommend them 100% and will definitely hire them again. Thank you for the great work.",
+    initials: "XP",
   },
 ];
 
@@ -105,7 +105,7 @@ export default function Reviews() {
               <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
                 <span style={{ fontWeight: 800, fontSize: "15px", color: "#1a1a2e" }}>5.0</span>
                 <StarRating count={5} />
-                <span style={{ color: "#6b7280", fontSize: "13px" }}>(50+ reviews)</span>
+                <span style={{ color: "#6b7280", fontSize: "13px" }}>(6 reviews)</span>
               </div>
             </div>
           </div>
